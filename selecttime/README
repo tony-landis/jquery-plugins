@@ -1,0 +1,9 @@
+jQuery plugin to take a normal input field containing 24 hour formatted time (HH:MM:SS), 
+and create options for the selection of hour, minute, AM/PM,
+updating the user's selection back to 24 hour format in the input field.
+
+========================================================================================
+
+Exmaples: http://tony-landis.github.com/jquery-plugins/
+Website:  http://www.tonylandis.com
+
