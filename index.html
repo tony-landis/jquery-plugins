@@ -62,13 +62,13 @@
 			});
 		</script>
 		<p>
-			Example # 1 - leave the 24-hour input field visible.
+			Example # 1 - leaves the 24-hour input field visible.
 			<br>
-			<input type="text" id="time1" value="10:40:00" />
+			<input type="text" id="time1" value="10:40:00" disabled="true" />
 		</p>
 		<br>
 		<p>
-			Example # 1 - hides the 24-hour input field. (This is the default setting)
+			Example # 2 - hides the 24-hour input field. (This is the default setting)
 			<br>
 			<input type="text" id="time2" value="18:15:00" />
 		</p>
@@ -82,7 +82,7 @@
 		$(&#39;#time2&#39;).selecttime({increment:15});
 	});
 &lt;/script&gt;
-&lt;input type=&quot;text&quot; id=&quot;time1&quot; value=&quot;10:40:00&quot; /&gt;
+&lt;input type=&quot;text&quot; id=&quot;time1&quot; value=&quot;10:40:00&quot; disabled=&quot;true&quot; /&gt;
 &lt;input type=&quot;text&quot; id=&quot;time2&quot; value=&quot;18:15:00&quot; /&gt;
 </pre>
 
