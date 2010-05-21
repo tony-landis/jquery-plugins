@@ -6,7 +6,7 @@
 // (c) Copyright 2009 Tony Landis, website: http://www.tonylandis.com
 // License: GPL
 //
-// Please leave this header intact.
+// All I ask is that you please leave this header intact.
 // If you use this class I would be interested to see your implementation!
 //
 
@@ -17,11 +17,11 @@
 		var $field = this;
 
 		// hide the input field
-		$field.hide();
+		if ($opts['hide'] == true) $field.hide();
 
 		// get ids
 		var id_am_pm = $(this).attr('id') + 'ap';
-		var id_mins = $(this).attr('id') + 'mn';
+		var id_mins =  $(this).attr('id') + 'mn';
 		var id_hours = $(this).attr('id') + 'hr';
 
 		// generate the select options
@@ -96,5 +96,6 @@
 	//
 	$.fn.selecttime.defaults = {
 		'increment': 15, // 1|5|10|15|30
+		'hide': true // this hides the actual input field
 	};
 }) (jQuery);
