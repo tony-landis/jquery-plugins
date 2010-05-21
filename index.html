@@ -1,12 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-
-	<title>tony-landis/jquery-plugins @ GitHub</title>
-	
+	<title>Tony Landis - jQuery Plugins - select date/time</title>
 	<style type="text/css">
 		body {
   		margin-top: 1.0em;
@@ -18,13 +15,13 @@
       margin: 0 auto;
       width: 700px;
     }
-		h1 { font-size: 3.8em; color: #e95729; margin-bottom: 3px; }
+		h1 { font-size: 2.8em; color: #e95729; margin-bottom: 3px; }
 		h1 .small { font-size: 0.4em; }
 		h1 a { text-decoration: none }
 		h2 { font-size: 1.5em; color: #e95729; }
     h3 { text-align: center; color: #e95729; }
     a { color: #e95729; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
+    .description { font-size: 1.1em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
     .download { float: right; }
 		pre { background: #000; color: #fff; padding: 15px;}
     hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
@@ -49,13 +46,39 @@
       <span class="small">by <a href="http://github.com/tony-landis">tony-landis</a></span></h1>
 
     <div class="description">
-      Some jQuery Plugins I have created
+      jQuery Plugins I have written 
     </div>
 
-    <p>coming soon</p><h2>Authors</h2>
-<p>Tony Landis (tony.landis@gmail.com)<br/><br/>      </p>
-<h2>Contact</h2>
-<p>Tony Landis (tony.landis@gmail.com)<br/>      </p>
+		<h3>JQUERY.SELECTTIME.JS - Examples</h3>	
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+		<script type="text/javascript" src="http://github.com/tony-landis/jquery-plugins/raw/master/selecttime/jquery.selecttime.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			$(document).ready(function() {
+				$('#time1').selecttime({increment:10, hide:false});
+				$('#time2').selecttime({increment:15});
+			});
+		</script>
+		<input type="text" id="time1" value="10:40:00" />
+		<input type="text" id="time2" value="18:15:00" />
+
+		<pre>
+			<script type="text/javascript" src="/jquery/1.2.6/jquery.min.js"></script>
+			<script type="text/javascript" src="/selecttime/jquery.selecttime.js"></script>
+			<script type="text/javascript" charset="utf-8">
+				$(document).ready(function() {
+					$('#time1').selecttime({increment:10, hide:false});
+					$('#time2').selecttime({increment:15});
+				});
+			</script>
+			<input type="text" id="time1" value="10:40:00" />
+			<input type="text" id="time2" value="18:15:00" />
+		</pre>
+
+								
+		<h2>Authors</h2>
+		<p>Tony Landis (tony.landis@gmail.com)<br/><br/>      </p>
+		<h2>Contact</h2>
+		<p>Tony Landis (tony.landis@gmail.com)<br/>      </p>
 
 
     <h2>Download</h2>
@@ -64,8 +87,7 @@
       <a href="http://github.com/tony-landis/jquery-plugins/zipball/master">zip</a> or
       <a href="http://github.com/tony-landis/jquery-plugins/tarball/master">tar</a> formats.
     </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
+    <p>You can also clone the project with <a href="http://git-scm.com">Git</a> by running:
       <pre>$ git clone git://github.com/tony-landis/jquery-plugins</pre>
     </p>
 
