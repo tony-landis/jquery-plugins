@@ -45,11 +45,14 @@
     <h1><a href="http://github.com/tony-landis/jquery-plugins">jquery-plugins</a>
       <span class="small">by <a href="http://github.com/tony-landis">tony-landis</a></span></h1>
 
-    <div class="description">
-      jQuery Plugins I have written 
-    </div>
 
 		<h3>JQUERY.SELECTTIME.JS - Examples</h3>	
+    <div class="description">
+				jQuery plugin to take a normal input field containing 24 hour formatted time (HH:MM:SS), 
+				and create options for the selection of hour, minute, AM/PM,
+				updating the user's selection back to 24 hour format in the input field.
+    </div>
+
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
 		<script type="text/javascript" src="http://github.com/tony-landis/jquery-plugins/raw/master/selecttime/jquery.selecttime.js"></script>
 		<script type="text/javascript" charset="utf-8">
@@ -58,21 +61,31 @@
 				$('#time2').selecttime({increment:15});
 			});
 		</script>
-		<input type="text" id="time1" value="10:40:00" />
-		<input type="text" id="time2" value="18:15:00" />
-
-		<pre>
-			<script type="text/javascript" src="/jquery/1.2.6/jquery.min.js"></script>
-			<script type="text/javascript" src="/selecttime/jquery.selecttime.js"></script>
-			<script type="text/javascript" charset="utf-8">
-				$(document).ready(function() {
-					$('#time1').selecttime({increment:10, hide:false});
-					$('#time2').selecttime({increment:15});
-				});
-			</script>
+		<p>
+			Example # 1 - leave the 24-hour input field visible.
+			<br>
 			<input type="text" id="time1" value="10:40:00" />
+		</p>
+		<br>
+		<p>
+			Example # 1 - hides the 24-hour input field. (This is the default setting)
+			<br>
 			<input type="text" id="time2" value="18:15:00" />
-		</pre>
+		</p>
+	
+		<h3>Code for the jquery.selecttime.js examples above</h3>
+		<pre>&lt;script type=&quot;text/javascript&quot; src=&quot;/jquery/1.2.6/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/selecttime/jquery.selecttime.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;
+	$(document).ready(function() {
+		$(&#39;#time1&#39;).selecttime({increment:10, hide:false});
+		$(&#39;#time2&#39;).selecttime({increment:15});
+	});
+&lt;/script&gt;
+&lt;input type=&quot;text&quot; id=&quot;time1&quot; value=&quot;10:40:00&quot; /&gt;
+&lt;input type=&quot;text&quot; id=&quot;time2&quot; value=&quot;18:15:00&quot; /&gt;
+</pre>
+
 
 								
 		<h2>Authors</h2>
