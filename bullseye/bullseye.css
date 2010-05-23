@@ -1,0 +1,108 @@
+div#bullseye {
+	font-size:85%;
+}
+
+div#bullseye th { 
+	border-color:#ccc; 
+	font-weight:900;
+}
+div#bullseye th:hover, div#bullseye .th-sel {
+	color:#fff;
+	background:#333;
+}
+div#bullseye .th-hid {
+	color:#ccc;
+	background:#eee;
+}
+
+div#bullseye th.col {
+	text-align:center; 
+	vertical-align:bottom; 
+	padding:2px;
+	height:26px; 
+	overflow:hidden; 
+	border:1px solid #eee; 
+	border-bottom:1px solid #222;
+	border-top:1px solid #fff;
+	width:50px;
+} 
+div#bullseye th.row {
+	text-align:left;
+	height:20px; 
+	padding:2px; 
+	padding-left:4px; 
+	height:20px; 
+	overflow:hidden; 
+	border:1px solid #eee; 
+	border-right:1px solid #222;
+	border-left:1px solid #fff;
+}
+
+
+div#bullseye td {
+	text-align:center;
+	overflow:hidden; 
+	border:1px solid #ccc;
+	padding:0;
+	margin:0;
+}
+div#bullseye td.no,div#bullseye td.na {background-color:#eee; color:#eee; }
+
+div#bullseye td.hot:hover { 
+	background:#ffffcc;
+	font-weight:900; 
+}
+
+div#bullseye td div.hidden {
+	display:none;
+	position:absolute;
+	border:2px solid #eee;
+	opacity:.9;
+	color:#fff;
+	background-color:#333;
+	font-weight:normal;
+	font-size:78%;
+	margin:0;
+	padding:2px;
+	overflow:auto;
+	z-index:100;
+}
+div#bullseye td div.hidden div {
+	padding:2px;
+	margin-bottom:6px;
+	font-size:125%;
+}
+div#bullseye td div.hidden p {
+	padding:1px;
+	font-size:110%;
+}
+div#bullseye td div.hidden a {color:#fff;}
+div#bullseye td div.hidden div a {
+	color:#ffffcc;
+	font-weight:900;
+}
+
+
+.sv {
+	background-color:#ffffcc;
+	font-weight:900; 
+}
+
+.sh {
+	background-color:#ffffcc;
+	font-weight:900; 
+}
+
+.line-col { 
+	background-image:url('line-col.png');
+	background-repeat:repeat-y;
+	color:#ccc;
+	opacity:.6;
+}
+
+.line-row { 
+	background-image:url('line-row.png');
+	background-repeat:repeat-x;
+	color:#ccc;
+	opacity:.6;
+}
