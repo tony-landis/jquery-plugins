@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Tony Landis - jQuery Plugin - select date/time</title>
+	<style type="text/css">
+		body {
+  		margin-top: 1.0em;
+  		background-color: #eee;
+		  font-family: "Helvetica,Arial,FreeSans";
+  		color: #000000;
+    }
+    #container {
+      margin: 0 auto;
+      width: 700px;
+			padding: 10px;
+			background: #fff;
+    }
+		h1 { font-size: 2.8em; color: #e95729; margin-bottom: 3px; }
+		h1 .small { font-size: 0.4em; }
+		h1 a { text-decoration: none }
+		h2 { font-size: 1.5em; color: #e95729; }
+    h3 { text-align: center; color: #e95729; }
+    a { color: #e95729; }
+    .description { font-size: 1.1em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
+    .download { float: right; }
+		pre { background: #000; color: #fff; padding: 15px;}
+    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+    .footer { text-align:center; padding-top:30px; font-style: italic; }
+	</style>
+	
+</head>
+
+<body>
+  <a href="http://github.com/tony-landis/jquery-plugins"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+
+  <div id="container">
+
+    <div class="download">
+      <a href="http://github.com/tony-landis/jquery-plugins/zipball/master">
+        <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
+      <a href="http://github.com/tony-landis/jquery-plugins/tarball/master">
+        <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
+    </div>
+
+    <h1><a href="http://github.com/tony-landis/jquery-plugins">JQUERY.SELECTTIME.JS</a>
+      <span class="small">by <a href="http://github.com/tony-landis">Tony Landis</a></span></h1>
+
+
+		<h3>JQUERY.SELECTTIME.JS - Examples</h3>	
+    <div class="description">
+				jQuery plugin to take a normal input field containing 24 hour formatted time (HH:MM:SS), 
+				and create options for the selection of hour, minute, AM/PM,
+				updating the user's selection back to 24 hour format in the input field.
+    </div>
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+		<script type="text/javascript" src="http://github.com/tony-landis/jquery-plugins/raw/master/selecttime/jquery.selecttime.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			$(document).ready(function() {
+				$('#time1').selecttime({increment:10, hide:false});
+				$('#time2').selecttime({increment:15});
+			});
+		</script>
+		<p>
+			Example # 1 - leaves the 24-hour input field visible.
+			<br>
+			<input type="text" id="time1" value="10:40:00" disabled="true" />
+		</p>
+		<br>
+		<p>
+			Example # 2 - hides the 24-hour input field. (This is the default setting)
+			<br>
+			<input type="text" id="time2" value="18:15:00" />
+		</p>
+	
+		<h3>code for the jquery.selecttime.js examples above</h3>
+		<pre>&lt;script type=&quot;text/javascript&quot; src=&quot;/jquery/1.2.6/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/selecttime/jquery.selecttime.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;
+	$(document).ready(function() {
+		$(&#39;#time1&#39;).selecttime({increment:10, hide:false});
+		$(&#39;#time2&#39;).selecttime({increment:15});
+	});
+&lt;/script&gt;
+&lt;input type=&quot;text&quot; id=&quot;time1&quot; value=&quot;10:40:00&quot; disabled=&quot;true&quot; /&gt;
+&lt;input type=&quot;text&quot; id=&quot;time2&quot; value=&quot;18:15:00&quot; /&gt;
+</pre>
+
+
+								
+		<h2>Authors</h2>
+		<p>Tony Landis (<a href="http://www.tonylandis.com">www.tonylandis.com</a>)<br/><br/>      </p>
+
+
+
+    <h2>Download</h2>
+    <p>
+      You can download this project in either
+      <a href="http://github.com/tony-landis/jquery-plugins/zipball/master">zip</a> or
+      <a href="http://github.com/tony-landis/jquery-plugins/tarball/master">tar</a> formats.
+    </p>
+    <p>You can also clone the project with <a href="http://git-scm.com">Git</a> by running:
+      <pre>$ git clone git://github.com/tony-landis/jquery-plugins</pre>
+    </p>
+
+    <div class="footer">
+      get the source code on GitHub : <a href="http://github.com/tony-landis/jquery-plugins">tony-landis/jquery-plugins</a>
+    </div>
+
+  </div>
+
+  
+</body>
+</html>
