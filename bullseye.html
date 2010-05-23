@@ -30,6 +30,20 @@
     .footer { text-align:center; padding-top:30px; font-style: italic; }
 	</style>
 	
+	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css"> 
+	<link rel="stylesheet" href="http://github.com/tony-landis/jquery-plugins/raw/master/bullseye/bullseye.css" type="text/css"> 
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>   
+	<script type="text/javascript" src="http://github.com/tony-landis/jquery-plugins/raw/master/bullseye/jquery.hoverIntent.js"></script> 
+	<script type="text/javascript" src="http://github.com/tony-landis/jquery-plugins/raw/master/bullseye/jquery.bullseye.js"></script> 
+	<script type="text/javascript" charset="utf-8"> 
+		$(document).ready(function(){
+			$('div#bullseye').bullseye({
+				'use_rows':3,
+				'use_cols':3,
+			});	
+		});
+	</script> 
+	
 </head>
 
 <body>
@@ -55,9 +69,999 @@
 			“draw cell lines” or “table zoom” would have been more appropriate but I don’t feel the 
 			need to agonize over names.
     </div>
-		<p>
-		   <a href="bullseye.html">See jquery.bullseye.js Examples</a>
-		</p>
+
+ 
+				<!-- bullseye example table # 1 --> 
+				<div id="bullseye"> 
+					<table> 
+						
+						<tr> 
+							<th></th> 
+							<th class="col">Jan</th> 
+							<th class="col">Feb</th> 
+							<th class="col">Mar</th> 
+							<th class="col">Apr</th> 
+							<th class="col">May</th> 
+							<th class="col">Jun</th> 
+							<th class="col">Jul</th> 
+							<th class="col">Aug</th> 
+							<th class="col">Oct</th> 
+							<th class="col">Sep</th> 
+							<th class="col">Nov</th> 
+							<th class="col">Dec</th> 
+						</tr> 
+						
+						<!-- ROW A --> 
+						<tr> 
+							<th class="row">2009</th> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for A0</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								A0
+							</td> 
+							<td class="na"></td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for A2</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								A2
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for A3</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								A3
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for A4</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								A4
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for A5</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								A5
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for A6</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								A6
+							</td> 
+							<td class="na"></td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for A8</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								A8
+							</td> 
+							<td class="na"></td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for A10</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								A10
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for A11</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								A11
+							</td> 
+						</tr> 
+						
+						<!-- ROW B --> 
+						<tr> 
+							<th class="row">2008</th> 
+							<td class="na"></td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for B1</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								B1
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for B2</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								B2
+							</td> 
+							<td class="na"></td> 
+							<td class="na"></td> 
+							<td class="na"></td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for B6</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								B6
+							</td> 
+							<td class="na"></td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for B8</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								B8
+							</td> 
+							<td class="na"></td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for B10</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								B10
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for B11</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								B11
+							</td> 
+						</tr> 
+						
+						
+						<!-- ROW C --> 
+						<tr> 
+							<th class="row">2007</th> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for C0</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								C0
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for C1</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								C1
+							</td> 
+							<td class="na"></td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for C3</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								C3
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for C4</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								C4
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for C5</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								C5
+							</td> 
+							<td class="na"></td> 
+							<td class="na"></td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for C8</div>.
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								C8
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for C9</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								C9
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for C10</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								C10
+							</td> 
+							<td class="na"></td> 
+						</tr> 
+						
+						
+						<!-- ROW D --> 
+						<tr> 
+							<th class="row">2006</th> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for D0</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								D0
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for D1</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								D1
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for D2</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								D2
+							</td> 
+							<td class="na"></td> 
+							<td class="na"></td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for D5</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								D5
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for D6</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								D6
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for D7</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								D7
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for D8</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								D8
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for D9</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								D9
+							</td> 
+							<td class="na"></td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for D11</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								D11
+							</td> 
+						</tr> 
+						
+						
+						<!-- ROW  E --> 
+						<tr> 
+							<th class="row">2005</th> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for E0</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								E0
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for E1</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								E1
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for E2</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								E2
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for E3</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								E3
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for E4</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								E4
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for E5</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								E5
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for E6</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								E6
+							</td> 
+							<td class="na"></td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for E8</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								E8
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for E9</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								E9
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for E10</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								E10
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for E11</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								E11
+							</td> 
+						</tr> 
+						
+						<!-- ROW  --> 
+						<tr> 
+							<th class="row">2004</th> 
+							<td class="na"></td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for F1</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								F1
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for F2</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								F2
+							</td> 
+							<td class="na"></td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for F4</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								F4
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for F5</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								F5
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for F6</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								F6
+							</td> 
+							<td class="na"></td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for F8</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								F8
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for F9</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								F9
+							</td> 
+							<td class="na"></td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for F11</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								F11
+							</td> 
+						</tr> 
+						
+						<!-- ROW G --> 
+						<tr> 
+							<th class="row">2003</th> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for G0</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								G0
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for G1</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								G1
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for G2</p> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								G2
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for G3</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								G3
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for G4</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								G4
+							</td> 
+							<td class="na"></td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for G6</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								G6
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for G7</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								G7
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for G8</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								G8
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for G9</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								G9
+							</td> 
+							<td class="na"></td> 
+							<td class="na"></td> 
+						</tr> 
+						
+						<!-- ROW H --> 
+						<tr> 
+							<th class="row">2002</th> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for H0</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								H0
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for H1</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								H1
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for H2</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								H2
+							</td> 
+							<td class="na"></td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for H4</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								H4
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for H5</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								H5
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for H6</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								H6
+							</td> 
+							<td class="na"></td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for H8</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								H8
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for H9</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								H9
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for H10</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								H10
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for H11</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								H11
+							</td> 
+						</tr> 
+						
+						<!-- ROW I --> 
+						<tr> 
+							<th class="row">2001</th> 
+							<td class="na"></td> 
+							<td class="na"></td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for I2</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								I2
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for I3</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								I3
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for I4</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								I4
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for I5</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								I5
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for I6</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								I6
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for I7</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								I7
+							</td> 
+							<td class="na"></td> 
+							<td class="na"></td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for I10</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								I10
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for I11</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								I11
+							</td> 
+						</tr> 
+						
+						<!-- ROW J --> 
+						<tr> 
+							<th class="row">2000</th> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for J0</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								J0
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for J1</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								J1
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for J2</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								J2
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for J3</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								J3
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for J4</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								J4
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for J5</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								J5
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for J6</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								J6
+							</td> 
+							<td class="na"></td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for J8</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								J8
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for J9</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								J9
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for J10</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								J10
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for J11</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								J11
+							</td> 
+						</tr> 
+						
+						<!-- ROW K --> 
+						<tr> 
+							<th class="row">1999</th> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for K0</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								K0
+							</td> 
+							<td class="na"></td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for K2</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								K2
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for K3</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								K3
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for K4</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								K4
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for K5</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								K5
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for K6</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								K6
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for K7</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								K7
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for K8</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								K8
+							</td> 
+							<td class="na"></td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for K10</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								K10
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for K11</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								K11
+							</td> 
+						</tr> 
+						
+						<!-- ROW L --> 
+						<tr> 
+							<th class="row">1998</th> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for K0</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								K0
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for K1</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								K1
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for K2</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								K2
+							</td> 
+							<td class="na"></td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for K4</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								K4
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for K5</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								K5
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for K6</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								K6
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for K7</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								K7
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for K8</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								K8
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for K9</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								K9
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for K10</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								K10
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for K11</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								K11
+							</td> 
+						</tr> 
+						
+						<!-- ROW L --> 
+						<tr> 
+							<th class="row">1997</th> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for L0</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								L0
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for L1</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								L1
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for L2</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								L2
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for L3</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								L3
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for L4</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								L4
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for L5</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								L5
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for L6</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								L6
+							</td> 
+							<td class="na"></td> 
+							<td class="na"></td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for L9</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								L9
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for L10</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								L10
+							</td> 
+							<td class="hot"> 
+								<div class="hidden"> 
+									<div>Hover for L11</div> 
+									<p><a href="#">More info</p><p><a href="#">Another link</p> 
+								</div> 
+								L11
+							</td> 
+						</tr> 
+					</table> 
+				</div> 
+				 
+				<p>&nbsp;</p> 
+				<p>&nbsp;</p> 
+				 
+				<h1 style="text-align:center"> 
+					bullsEye Screenshots
+				</h1> 
+				 
+				<div style="margin-top:14px;"> 
+					<img src="screenshots/bullseye-col.png"> 
+				</div> 
+				 
+				<div style="margin-top:14px;"> 
+					<img src="screenshots/bullseye-row.png"> 
+				</div> 
+				 
+				<div style="margin-top:14px;"> 
+					<img src="screenshots/bullseye-hover.png"> 
+				</div> 
+ 
+		
+		
+		<h3>code for the jquery.selecttime.js examples above</h3>
+		<pre>
+
+		</pre>
 
 								
 		<h2>authors</h2>
